@@ -1,0 +1,8 @@
+---
+- hosts: all 
+  become: true
+  roles:
+    - zabbix.server
+  tasks:
+    - name: simple ping 
+      ping: 
